@@ -9,7 +9,7 @@ public class OrderService
 {
     private readonly IRepository<long, Order> _orderRepository;
     private readonly IDiscountPolicy _discountPolicy;
-    private int _orderId = 1;
+    private long _orderId = 1;
 
     public OrderService(IRepository<long, Order> orderRepository, IDiscountPolicy discountPolicy)
     {
